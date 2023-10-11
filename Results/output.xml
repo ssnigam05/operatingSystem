@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on darwin)" generated="20231010 15:43:11.634" rpa="false" schemaversion="4">
+<suite id="s1" name="operatingSystem" source="/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/tests/operatingSystem.robot">
+<test id="s1-t1" name="Create Some Directories" line="6">
+<kw name="Create the base directory" library="os">
+<kw name="Log" library="BuiltIn">
+<arg>log file is ${output_directory}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231010 15:43:11.847" level="INFO">log file is Outputs</msg>
+<status status="PASS" starttime="20231010 15:43:11.846" endtime="20231010 15:43:11.848"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${output_directory}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20231010 15:43:11.849" level="INFO" html="true">Created directory '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.848" endtime="20231010 15:43:11.849"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${output_directory}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.850" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.849" endtime="20231010 15:43:11.850"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.846" endtime="20231010 15:43:11.850"/>
+</kw>
+<kw name="Create Directory 1" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${directory_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.851" level="INFO">${directory_path} = Outputs/first directory</msg>
+<status status="PASS" starttime="20231010 15:43:11.851" endtime="20231010 15:43:11.851"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${directory_path}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20231010 15:43:11.852" level="INFO" html="true">Created directory '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.851" endtime="20231010 15:43:11.852"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${directory_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.852" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.852" endtime="20231010 15:43:11.852"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.850" endtime="20231010 15:43:11.852"/>
+</kw>
+<kw name="Create Directory 2" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${directory_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_2}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.853" level="INFO">${directory_path} = Outputs/second directory</msg>
+<status status="PASS" starttime="20231010 15:43:11.853" endtime="20231010 15:43:11.853"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${directory_path}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20231010 15:43:11.853" level="INFO" html="true">Created directory '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.853" endtime="20231010 15:43:11.853"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${directory_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.854" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.854" endtime="20231010 15:43:11.854"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.852" endtime="20231010 15:43:11.854"/>
+</kw>
+<tag>OperatingSystem</tag>
+<status status="PASS" starttime="20231010 15:43:11.844" endtime="20231010 15:43:11.854"/>
+</test>
+<test id="s1-t2" name="Create some text files" line="13">
+<kw name="Create file 1" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_1}</arg>
+<arg>${file_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.855" level="INFO">${file_path} = Outputs/first directory/file_1.txt</msg>
+<status status="PASS" starttime="20231010 15:43:11.855" endtime="20231010 15:43:11.855"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20231010 15:43:11.856" level="INFO" html="true">Created file '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.855" endtime="20231010 15:43:11.856"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.856" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.856" endtime="20231010 15:43:11.856"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.855" endtime="20231010 15:43:11.856"/>
+</kw>
+<kw name="Create file 2" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_1}</arg>
+<arg>${file_2}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.857" level="INFO">${file_path} = Outputs/first directory/file_2.txt</msg>
+<status status="PASS" starttime="20231010 15:43:11.856" endtime="20231010 15:43:11.857"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20231010 15:43:11.857" level="INFO" html="true">Created file '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_2.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_2.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.857" endtime="20231010 15:43:11.857"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.858" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_2.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_2.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.858" endtime="20231010 15:43:11.858"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.856" endtime="20231010 15:43:11.858"/>
+</kw>
+<kw name="Create file 3" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${file_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_2}</arg>
+<arg>${file_3}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.859" level="INFO">${file_path} = Outputs/second directory/file_3.txt</msg>
+<status status="PASS" starttime="20231010 15:43:11.858" endtime="20231010 15:43:11.859"/>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20231010 15:43:11.859" level="INFO" html="true">Created file '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_3.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_3.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.859" endtime="20231010 15:43:11.859"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${file_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.859" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_3.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_3.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.859" endtime="20231010 15:43:11.859"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.858" endtime="20231010 15:43:11.860"/>
+</kw>
+<tag>Files</tag>
+<status status="PASS" starttime="20231010 15:43:11.854" endtime="20231010 15:43:11.860"/>
+</test>
+<test id="s1-t3" name="Copy my file" line="19">
+<kw name="Log" library="BuiltIn">
+<arg>copy file 1 to directory 2</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231010 15:43:11.861" level="INFO">copy file 1 to directory 2</msg>
+<status status="PASS" starttime="20231010 15:43:11.861" endtime="20231010 15:43:11.861"/>
+</kw>
+<kw name="copy my file" library="os">
+<kw name="Join Path" library="OperatingSystem">
+<var>${source_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_1}</arg>
+<arg>${file_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.862" level="INFO">${source_path} = Outputs/first directory/file_1.txt</msg>
+<status status="PASS" starttime="20231010 15:43:11.862" endtime="20231010 15:43:11.862"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${target_path}</var>
+<arg>${output_directory}</arg>
+<arg>${directory_2}</arg>
+<arg>${file_1}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231010 15:43:11.862" level="INFO">${target_path} = Outputs/second directory/file_1.txt</msg>
+<status status="PASS" starttime="20231010 15:43:11.862" endtime="20231010 15:43:11.862"/>
+</kw>
+<kw name="Copy File" library="OperatingSystem">
+<arg>${source_path}</arg>
+<arg>${target_path}</arg>
+<doc>Copies the source file into the destination.</doc>
+<msg timestamp="20231010 15:43:11.864" level="INFO" html="true">Copied file from '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt&lt;/a&gt;' to '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_1.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20231010 15:43:11.862" endtime="20231010 15:43:11.864"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${source_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.865" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/first directory/file_1.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.864" endtime="20231010 15:43:11.865"/>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<arg>${target_path}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<msg timestamp="20231010 15:43:11.867" level="INFO" html="true">Path '&lt;a href="file:///Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_1.txt"&gt;/Users/shyam/Documents/Documents – Shyam’s MacBook Pro/RobotFramework/operatingSystem/Outputs/second directory/file_1.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20231010 15:43:11.865" endtime="20231010 15:43:11.868"/>
+</kw>
+<status status="PASS" starttime="20231010 15:43:11.861" endtime="20231010 15:43:11.868"/>
+</kw>
+<tag>Copy File</tag>
+<status status="PASS" starttime="20231010 15:43:11.860" endtime="20231010 15:43:11.869"/>
+</test>
+<doc>These are some files and directory tests</doc>
+<status status="PASS" starttime="20231010 15:43:11.635" endtime="20231010 15:43:11.871"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Copy File</stat>
+<stat pass="1" fail="0" skip="0">Files</stat>
+<stat pass="1" fail="0" skip="0">OperatingSystem</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="operatingSystem">operatingSystem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
